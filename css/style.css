@@ -198,3 +198,31 @@ footer { background: #070c16; color: #7e8a9d; padding: 26px 0; }
   .contact-item strong { font-size: .72rem; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
+
+/* Bilingual language control */
+.lang-toggle{border:1px solid rgba(255,255,255,.18);background:transparent;color:#fff;border-radius:6px;padding:8px 12px;font-size:.78rem;font-weight:800;transition:.2s}
+.lang-toggle:hover{border-color:var(--accent);color:var(--accent)}
+html[dir="rtl"] body{font-family:"Inter",Arial,sans-serif;text-align:right}
+html[dir="rtl"] .navbar-nav{margin-left:0!important;margin-right:auto!important}
+html[dir="rtl"] .hero-links,.tech-tags{direction:inherit}
+html[dir="rtl"] .bi-arrow-right:before{transform:scaleX(-1)}
+html[dir="rtl"] .contact-item{grid-template-columns:20px 1fr 46px}
+html[dir="rtl"] .contact-item .contact-icon{grid-column:3;grid-row:1}
+html[dir="rtl"] .contact-item > span:nth-child(2){grid-column:2;grid-row:1}
+html[dir="rtl"] .contact-item > i{grid-column:1;grid-row:1;transform:scaleX(-1)}
+
+/* Selected work: real project previews */
+.work-showcase-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.work-card{background:var(--dark-2);border:1px solid rgba(255,255,255,.1);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.work-image-link{position:relative;display:block;background:#0a0f19;overflow:hidden;aspect-ratio:16/9}
+.work-image-link img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease,filter .45s ease}
+.work-image-link:hover img{transform:scale(1.025);filter:brightness(.72)}
+.work-visit{position:absolute;left:50%;top:50%;transform:translate(-50%,-42%);opacity:0;background:rgba(11,18,32,.92);color:#fff;border:1px solid rgba(255,255,255,.22);padding:10px 14px;border-radius:6px;font-size:.76rem;font-weight:800;transition:.25s;white-space:nowrap}
+.work-image-link:hover .work-visit{opacity:1;transform:translate(-50%,-50%)}
+.work-card-body{padding:30px;display:flex;flex-direction:column;flex:1}
+.work-card-body h3{font-size:1.35rem;margin:13px 0;letter-spacing:-.035em}
+.work-card-body p{color:#9ba7b9;font-size:.88rem;min-height:66px}
+.work-card-body .project-link{margin-top:auto;padding-top:4px}
+html[dir="rtl"] .work-visit{direction:rtl}
+@media(max-width:991.98px){.work-showcase-grid{grid-template-columns:1fr}}
+@media(max-width:575.98px){.work-card-body{padding:25px 22px}.work-card-body p{min-height:0}.lang-toggle{width:100%;text-align:start;margin:4px 0}}
