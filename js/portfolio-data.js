@@ -20,7 +20,7 @@ window.PROGMIDO_PROJECTS = [
     "ar": "الأستاذ الدكتور عبد الوهاب السيسي — نموذج موقع طبي",
     "images": [
       {
-        "src": "assets/portfolio/Websites%20Main.jpg",
+        "src": "assets/images/doctor-alsisi-home-1920x1080.jpg",
         "label": ""
       }
     ],
@@ -35,7 +35,7 @@ window.PROGMIDO_PROJECTS = [
     "ar": "فعالية التفاعل العالمي ٢٠٢٦",
     "images": [
       {
-        "src": "assets/images/global-engagement-project.jpg",
+        "src": "assets/images/global-engagement-home-1920x1080.jpg",
         "label": ""
       }
     ],
